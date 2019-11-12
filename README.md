@@ -1,7 +1,9 @@
 # thesis
 
 Title: Autonomous security response orchestration with Machine Learning for programmable networks
+
 Author: Vibha R Goutham
+
 University: TU Chemnitz
 
 Detection & Mitigation
