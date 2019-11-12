@@ -8,8 +8,10 @@ University: TU Chemnitz
 
 **Detection & Mitigation**
 
-*Traffic Detection: 
+**Traffic Detection: 
+
 Traffic prediction analysis using Machine Learning technique
 
-*Mitigation plan:
-security function playbooks are triggered
+**Mitigation plan:
+
+Trigger security function playbooks
