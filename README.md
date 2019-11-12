@@ -6,10 +6,10 @@ Author: Vibha R Goutham
 
 University: TU Chemnitz
 
-Detection & Mitigation
+**Detection & Mitigation**
 
-Traffic Detection: 
+*Traffic Detection: 
 Traffic prediction analysis using Machine Learning technique
 
-Mitigation plan:
+*Mitigation plan:
 security function playbooks are triggered
