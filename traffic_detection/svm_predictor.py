@@ -11,7 +11,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 from numpy import linalg
 from sklearn.metrics import confusion_matrix
-#from sklearn.preprocessing import MinMaxScaler
+from sklearn.preprocessing import MinMaxScaler
 #from sklearn.metrics import precision_score
 #from sklearn.metrics import accuracy_score
 
@@ -195,10 +195,10 @@ class SVM(threading.Thread):
 
   def gen_lin_separable_overlap_data(self):
     # generate training data in the 2-d case
-    f = open('./data_set_normal7.txt','r+')
+    f = open('./_data_set_normal6.txt','r+')
     read1 = f.readlines()
     f.close()
-    f = open('./data_set_abnormal_new.txt','r+')
+    f = open('./_data_set_abnormal6.txt','r+')
     read2 = f.readlines()
     f.close()
     #scaler = MinMaxScaler()
@@ -216,12 +216,10 @@ class SVM(threading.Thread):
 
       if FT == 1:
         X1 = np.array(x)
-        #X1 = X1.astype(np.float)
         FT = 0
       else:
         X1 = np.append(X1,x,axis = 0)
 
-    #X1 = X1.astype(np.float)
     #X1 = scaler.fit_transform(x1)
     #X1 = scaler.transform(x1)
       #print("x is", x)
@@ -240,12 +238,9 @@ class SVM(threading.Thread):
       x = [[float(z1[1])/10.0,float(z1[0])/10.0]]
       if FT == 1:
         X2 = np.array(x)
-        #X2 = X2.astype(np.float)
         FT = 0
       else:
         X2 = np.append(X2,x,axis = 0)
-
-    #X2 = X2.astype(np.float)
     print ("X2 is here", X2)
     y2 = np.ones(len(X2)) * -1
 
@@ -277,10 +272,10 @@ class SVM(threading.Thread):
 
   def split_test(self, X1, y1, X2, y2):
     #Test data set
-    X1_test = X1[1921:2200]
-    y1_test = y1[1921:2200]
-    X2_test = X2[1921:2200]
-    y2_test = y2[1921:2200]
+    X1_test = X1[1221:2000]
+    y1_test = y1[1221:2000]
+    X2_test = X2[1221:2000]
+    y2_test = y2[1221:2000]
     X_test = np.vstack((X1_test, X2_test))
     y_test = np.hstack((y1_test, y2_test))
     #print("The X1_test starts here..", X1_test)
