@@ -1,0 +1,18 @@
+From <abc@sarnet.com> Fri Apr  5 16:43:56 2019
+Received: from sdn-sw (10.20.5.14 [10.20.5.14])
+	by 10.20.5.46 [10.20.5.46] (smtpot.py 0.3.2)
+	for ['<xyz@sarnet.com>']; Fri, 05 Apr 2019 16:43:56 +0000
+From: <abc@sarnet.com>
+To: <xyz@sarnet.com>
+Subject: Testing SMTP Mail
+This is only a test. Please do not panic. If this works, then all is well, else all is not well.
+
+From <attacker@sarnet.com> Fri Apr  5 18:42:50 2019
+Received: from sdn-sw (10.20.5.14 [10.20.5.14])
+	by 10.20.5.46 [10.20.5.46] (smtpot.py 0.3.2)
+	for ['<victim@sarnet.com>']; Fri, 05 Apr 2019 18:42:50 +0000
+From: <attacker@sarnet.com>
+To: <victim@sarnet.com>
+Subject: Testing SMTP Mail
+This is only a test. Please do not panic. If this works, then all is well, else all is not well.
+
