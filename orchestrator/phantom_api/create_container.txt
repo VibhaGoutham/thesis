@@ -1,0 +1,19 @@
+curl -X POST \
+  https://admin:password@10.20.5.34/rest/container \
+  -H 'Content-Type: application/json' \
+  -H 'Postman-Token: 68ea07b4-7ba6-4c40-b359-521bc60356e1' \
+  -H 'cache-control: no-cache' \
+  -d '{
+  "id": 355,
+  "version": "1",
+  "label": "events",
+  "name": "my_test_event",
+  "description": "this is my test event",
+  "playbook_run_id": 413,
+  "status": "open",
+  "sensitivity": "amber",
+  "severity": "medium",
+  "kill_chain": "",
+  "data": {},
+  "artifact_count": 1
+}'
