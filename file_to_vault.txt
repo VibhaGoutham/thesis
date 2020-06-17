@@ -1,0 +1,30 @@
+curl -X GET \
+  https://admin:password@10.20.5.34/rest/playbook_run \
+  -H 'Postman-Token: 5ccaa0be-ea59-4fbb-bc1c-0b8f123f0ffb' \
+  -H 'cache-control: no-cache' \
+  -d '{
+  "id": 107,
+  "version": "1",
+  "label": "incident",
+  "name": "my_test_incident",
+  "source_data_identifier": "64c2a9a4-d6ef-4da8-ad6f-982d785f14b2",
+  "description": "this is my test incident",
+  "status": "open",
+  "sensitivity": "amber",
+  "severity": "medium",
+  "create_time": "2016-01-16 07:18:46.631897+00",
+  "start_time": "2016-01-16 07:18:46.636966+00",
+  "end_time": "",
+  "due_time": "2016-01-16 19:18:00+00",
+  "close_time": "",
+  "kill_chain": "",
+  "owner": "admin",
+  "hash": "52d277ed6eba51d86190cd72405df749",
+  "tags": [""],
+  "asset_name": "",
+  "artifact_update_time": "2016-01-16 07:18:46.631875+00",
+  "container_update_time": "2016-01-16 07:19:12.359376+00",
+  "ingest_app_id": "",
+  "data": {},
+  "artifact_count": 8
+}'
